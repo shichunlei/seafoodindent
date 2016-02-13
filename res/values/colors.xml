@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- 灰色 -->
+    <color name="gray">#808080</color>
+    <!-- 蓝色 -->
+    <color name="blue">#0000FF</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 透明色 -->
+    <color name="transparent">#00000000</color>
+    <!-- 白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 红色 -->
+    <color name="red">#FF0000</color>
+    <!-- 主页文字颜色 暗灰色 -->
+    <color name="dimgrey">#696969</color>
+    <!-- 标头分项蓝色字颜色 -->
+    <color name="myBlue">#0b77fc</color>
+    <!-- 列表分割线 -->
+    <color name="bgc_line">#7aCCCCCC</color>
+    <!-- 主页背景色 -->
+    <color name="bg">#f7f7f7</color>
+
+</resources>

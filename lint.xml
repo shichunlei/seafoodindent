@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="InflateParams">
+        <ignore path="src/com/project/seafoodindent/adapter/NearbyAdapter.java" />
+        <ignore path="src/com/project/seafoodindent/fragment/MineFragment.java" />
+    </issue>
+    <issue id="UseSparseArrays">
+        <ignore path="src/com/project/seafoodindent/rails/WebSocketRailsDispatcher.java" />
+    </issue>
+</lint>

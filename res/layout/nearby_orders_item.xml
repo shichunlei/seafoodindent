@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/nearbyorders_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/nearbyorders_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="@color/dimgrey"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/nearbyorders_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/nearbyorders_price"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/accept_button"
+        android:text="接单"
+        android:textColor="@color/myBlue" />
+
+    <LinearLayout
+        android:id="@+id/ll_nearbyorders_address"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nearbyorders_shop_name"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/nearbyorder_stop_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@color/dimgrey"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/nearbyorder_start_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:textColor="@color/dimgrey"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nearbyorders_submit"
+        android:layout_alignTop="@+id/nearbyorders_submit"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/ll_nearbyorders_address"
+        android:src="@drawable/link" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nearbyorders_submit"
+        android:layout_alignTop="@+id/nearbyorders_submit"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/link"
+        android:src="@drawable/qu" />
+
+</RelativeLayout>

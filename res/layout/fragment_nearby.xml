@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg" >
+
+    <ListView
+        android:id="@+id/nearby_list"
+        style="@style/listview"
+        android:headerDividersEnabled="true"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/no_nearby_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_order"
+        android:textColor="@color/dimgrey"
+        android:textSize="20sp" />
+
+</RelativeLayout>

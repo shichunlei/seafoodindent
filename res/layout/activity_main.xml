@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7" >
+
+    <include
+        android:id="@+id/includ"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/includ"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_main_tabtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/nearbyText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/nearby"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mineText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/mine"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_indicateline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_main_tabtitle"
+            android:layout_gravity="bottom" >
+
+            <TextView
+                android:id="@+id/line1"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/slide" />
+
+            <TextView
+                android:id="@+id/line2"
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_weight="1"
+                android:background="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.project.seafoodindent.customview.MainViewPager
+        android:id="@+id/viewPager_main"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout1"
+        android:layout_gravity="center" />
+
+</RelativeLayout>
